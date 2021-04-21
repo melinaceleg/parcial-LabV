@@ -5,6 +5,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 import java.time.LocalDate;
 @Entity
 @NoArgsConstructor
@@ -14,6 +15,7 @@ public class Jugador extends Persona {
         private double altura;
         private Integer goles;
         private Integer minutosJugados;
+        @OneToOne
         private Currency currency;
         private LocalDate fechaNacimiento;
 

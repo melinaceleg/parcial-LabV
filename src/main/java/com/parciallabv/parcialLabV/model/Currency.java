@@ -16,7 +16,7 @@ public class Currency {
     @GeneratedValue
     private Integer id;
     @NotEmpty
-    private String Currency;
+    private TypeCurrency Currency;
     private double Monto;
 
 }
